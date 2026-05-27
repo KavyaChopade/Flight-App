@@ -1,0 +1,14 @@
+package com.rbu.flightservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@ComponentScan(basePackages = {"com.rbu.flightservice", "com.rbu.config"})
+public class FlightServiceApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(FlightServiceApplication.class, args);
+    }
+}

@@ -1,0 +1,339 @@
+/* =========================================
+   Flight-App — Global Styles
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #f5f7fa;
+  color: #1a1f36;
+  min-height: 100vh;
+}
+
+/* ---- Navbar ---- */
+.flight-navbar {
+  background: #ffffff;
+  border-bottom: 1.5px solid #e8ecf4;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  padding: 0.75rem 0;
+}
+
+.flight-navbar .brand-name {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: #0a2463;
+  letter-spacing: -0.5px;
+}
+
+.flight-navbar .brand-icon {
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
+
+.flight-navbar .nav-link {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #4a5568 !important;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.flight-navbar .nav-link:hover {
+  background: #f0f4ff;
+  color: #0a2463 !important;
+}
+
+.flight-navbar .dropdown-menu {
+  border: 1.5px solid #e8ecf4;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 0.4rem;
+  min-width: 160px;
+}
+
+.flight-navbar .dropdown-item {
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 0.88rem;
+  padding: 0.5rem 1rem;
+  color: #4a5568;
+  transition: background 0.15s ease;
+}
+
+.flight-navbar .dropdown-item:hover {
+  background: #f0f4ff;
+  color: #0a2463;
+}
+
+/* ---- Page container ---- */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* ---- Page Header ---- */
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h2 {
+  font-weight: 800;
+  font-size: 1.75rem;
+  color: #0a2463;
+  letter-spacing: -0.5px;
+}
+
+.page-header p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+/* ---- Form Card ---- */
+.form-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  padding: 2.2rem 2.5rem;
+  border: 1.5px solid #e8ecf4;
+  max-width: 620px;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+
+.form-control,
+.form-select {
+  border: 1.5px solid #d1d5db;
+  border-radius: 10px;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.93rem;
+  color: #1a1f36;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #3b6ef8;
+  box-shadow: 0 0 0 3px rgba(59, 110, 248, 0.12);
+  outline: none;
+}
+
+/* ---- Buttons ---- */
+.btn-primary-custom {
+  background: linear-gradient(135deg, #1e40af 0%, #3b6ef8 100%);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.93rem;
+  padding: 0.65rem 1.8rem;
+  letter-spacing: 0.2px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(59, 110, 248, 0.38);
+  background: linear-gradient(135deg, #1d3ea3 0%, #2f5ef0 100%);
+  color: #fff;
+}
+
+.btn-danger-custom {
+  background: #fff;
+  border: 1.5px solid #ef4444;
+  color: #ef4444;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.83rem;
+  padding: 0.4rem 1.1rem;
+  transition: background 0.15s, color 0.15s;
+  cursor: pointer;
+}
+
+.btn-danger-custom:hover {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* ---- Flight Card ---- */
+.flight-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1.5px solid #e8ecf4;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.4rem 1.6rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  height: 100%;
+}
+
+.flight-card:hover {
+  box-shadow: 0 6px 24px rgba(10, 36, 99, 0.1);
+  transform: translateY(-2px);
+}
+
+.flight-card .flight-code {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #0a2463;
+  background: #f0f4ff;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  margin-bottom: 0.9rem;
+}
+
+.flight-card .flight-carrier {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #1a1f36;
+  margin-bottom: 0.75rem;
+}
+
+.flight-card .flight-meta {
+  font-size: 0.88rem;
+  color: #6b7280;
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.flight-card .flight-cost {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #0a2463;
+  margin: 0.85rem 0 1rem 0;
+}
+
+.flight-card .divider {
+  height: 1px;
+  background: #e8ecf4;
+  margin: 0.8rem 0;
+}
+
+/* ---- Alert banners ---- */
+.alert-success-custom {
+  background: #ecfdf5;
+  border: 1.5px solid #6ee7b7;
+  color: #065f46;
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.alert-error-custom {
+  background: #fef2f2;
+  border: 1.5px solid #fca5a5;
+  color: #991b1b;
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.alert-warning-custom {
+  background: #fffbeb;
+  border: 1.5px solid #fcd34d;
+  color: #92400e;
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* ---- Search form row ---- */
+.search-bar-card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1.5px solid #e8ecf4;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ---- Spinner ---- */
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+/* ---- Empty state ---- */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #9ca3af;
+}
+
+.empty-state .empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.4;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ---- Route arrow ---- */
+.route-arrow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.route-arrow span.arrow {
+  color: #3b6ef8;
+  font-size: 1rem;
+}
+
+/* ---- Cards grid ---- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 992px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .page-container {
+    padding: 1.5rem 1rem;
+  }
+}
