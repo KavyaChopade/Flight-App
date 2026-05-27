@@ -170,24 +170,6 @@ Frontend starts at: `http://localhost:5173`
 
 ---
 
-## 🐳 Docker Setup (Optional)
-
-Build and run the backend in Docker:
-
-```bash
-cd flight-service-backend/flight-service
-
-docker build -t flight-service .
-
-docker run -p 9090:9090 \
-  -e SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/training \
-  -e SPRING_DATASOURCE_USERNAME=root \
-  -e SPRING_DATASOURCE_PASSWORD=YOUR_PASSWORD \
-  flight-service
-```
-
----
-
 ## 🧪 Running Tests
 
 ```bash
